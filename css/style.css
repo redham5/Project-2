@@ -1,0 +1,483 @@
+/* fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* fonts import */
+
+:root{
+    --lato: 'Lato', sans-serif;
+}
+
+/* common css part start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* common css part end */
+
+
+/* ===============================
+    navbar part start
+=============================== */
+#navbar{
+    height: 100px;
+    background: #f6f9f9;
+}
+
+.main_manu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.main_manu .logo{
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.main_manu .manu ul li a{
+    color: #222222;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--lato);
+    text-align: right;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.main_manu .manu ul li a:hover{
+    color: #15a4fa;
+}
+/* ===============================
+    navbar part end
+=============================== */
+
+/* ===============================
+    banner part start
+=============================== */
+#banner{
+    height: 800px;
+}
+
+.banner{
+    height: 100%;
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+}
+
+.main_banner{
+    text-align: center;
+    padding-top: 215px;
+}
+
+.main_banner h1{
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 600;
+    font-family: var(--lato);
+    position: relative;
+}
+
+.main_banner h1::after{
+    content: "";
+    height: 3px;
+    width: 600px;
+    background: #15a4fa;
+    left: 275px;
+    bottom: -35px;
+    position: absolute;
+}
+
+.main_banner p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--lato);
+    margin-top: 75px;
+    margin-bottom: 65px;
+}
+
+.main_banner .button a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--lato);
+    border: 2px solid #15a4fa;
+    border-radius: 2%;
+    padding: 20px 35px;
+    transition: 0.3s;
+}
+
+.main_banner .button a:hover{
+    background: #15a4fa;
+}
+
+.main_banner .icon{
+    margin-top: 100px;
+}
+
+.main_banner .icon i{
+    color: #ffffff;
+    font-size: 25px;
+}
+/* ===============================
+    banner part end
+=============================== */
+
+/* ===============================
+    about part start
+=============================== */
+#about{
+    height: 340px;
+    background: #f6f9f9;
+}
+
+.about_text{
+    text-align: center;
+    padding-top: 80px;
+
+}
+
+.about_text h3{
+    color: #2d3950;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: var(--lato);
+}
+
+.about_text p{
+    color: #999999;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: var(--lato);
+    margin-top: 30px;
+}
+/* ===============================
+    about part end
+=============================== */
+
+/* ===============================
+    service part start
+=============================== */
+#service{
+    height: 340px;
+    color: #ffffff;
+}
+
+.service_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.service_item .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    padding-top: 65px;
+}
+
+.service_item .item .icon{
+    width: 100px;
+    height: 100px;
+    background: #48baff;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.service_item .item .icon::after{
+    content: "";
+    width: 50px;
+    height: 100px;
+    background: #5fc3ff;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.service_item .item .icon i {
+    color: #ffffff;
+    font-size: 45px;
+    z-index: 2;
+    filter: drop-shadow(0  1px 1px rgba(0, 0, 0, 0.8));
+}
+
+.service_item .item h3{
+    color: #2d3950;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--lato);
+    line-height: 1;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.service_item .item p{
+    color: #999999;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: var(--lato);
+    text-align: center;
+}
+/* ===============================
+    service part end
+=============================== */
+
+/* ===============================
+    portfilio part start
+=============================== */
+#portfolio{
+    height: 900px;
+    background: #f6f9f9;
+}
+
+.text_part{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.text_part h3{
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: 500;
+    font-family: var(--lato);
+}
+
+.text_part p{
+    margin-top: 20px;
+    color: #909090;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--lato);
+
+}
+
+.images_part{
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.images_part .img-col{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.images_part .img-col .inner_item{
+    position: relative;
+}
+
+.images_part .img-col .inner_item .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 165, 245, 0.8);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear all 0.2s;
+}
+
+.images_part .img-col .inner_item .overlay .icons{
+    display: flex;
+    gap: 10px;
+}
+
+.images_part .img-col .inner_item .overlay .icons a{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images_part .img-col .inner_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.images_part .img-col .inner_item .overlay .icons a:hover{
+    color: rgba(28, 165, 245, 0.8);
+    background: #ffffff;
+}
+/* ===============================
+    portfilio part end
+=============================== */
+
+/* ===============================
+    contact part start
+=============================== */
+#contact{
+    height: 700px;
+}
+
+.contact{
+    height: 100%;
+    background: url(../images/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .contact_overlay{
+    height: 100%;
+    background: rgba(44, 56, 76, 0.9);
+}
+
+.contact_text{
+    text-align: center;
+    padding-top: 75px;
+    margin-bottom: 50px;
+}
+
+.contact_text h3{
+    color: #ffffff;
+    font-size: 41px;
+    font-weight: 500;
+    font-family: var(--lato);
+}
+
+.contact_text p{
+    color: #999999;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--lato);
+    margin-top: 20px;
+}
+
+.contact_form{
+   max-width: 550px;
+   margin: auto;
+   padding: 20px 25px;
+   overflow: hidden;
+   text-align: center;
+}
+
+.contact_form .form_text{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #999999;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--lato);
+}
+
+.contact_form textarea{
+    resize: none;
+    height: 160px;
+}
+
+.contact_form .form_text_btn{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--lato);
+    border: 1px solid #5fc3ff;
+    background: transparent;
+    padding: 20px 50px;
+}
+/* ===============================
+    contact part end
+=============================== */
+
+/* ===============================
+    footer part start
+=============================== */
+footer{
+    height: 90px;
+    background: #f6f9f9;
+}
+
+.main_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.main_footer .footer_item p{
+    color: #999999;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--lato);
+}
+
+.main_footer .footer_item .icon{
+    display: flex;
+    gap: 5px;
+}
+
+.main_footer .footer_item .icon a{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    background: #15a4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ===============================
+    footer part end
+=============================== */
